@@ -3,7 +3,7 @@
 class: CommandLineTool
 
 description: |
-  bedGraphToBigWig v 4 - Convert a bedGraph file to bigWig format.
+  Convert a bedGraph file to bigWig format.
 
   usage:
      bedGraphToBigWig in.bedGraph chrom.sizes out.bw
