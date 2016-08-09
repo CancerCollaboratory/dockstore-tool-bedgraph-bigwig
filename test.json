@@ -1,0 +1,15 @@
+{
+  "input": {
+    "path": "rna.SRR948778.bedGraph",
+    "class": "File"
+  },
+  "genomeFile": {
+    "path": "chrom.sizes",
+    "class": "File"
+  },
+  "bigWigOut": {
+    "path": "out.bw",
+    "class": "File"
+  },
+  "bigWig": "out.bw"
+}

@@ -20,10 +20,11 @@ description: |
   The input bedGraph file must be sorted, use the unix sort command:
     sort -k1,1 -k2,2n unsorted.bedGraph > sorted.bedGraph
 
+cwlVersion: draft-3
+
 requirements:
   - class: DockerRequirement
     dockerPull: "quay.io/cancercollaboratory/dockstore-tool-bedgraph-bigwig"
-  - { import: node-engine.cwl }
 
 dct:contributor:
   foaf:name: Andy Yang
@@ -81,8 +82,6 @@ outputs:
   - id: "#bigWigOut"
     type: File
     outputBinding:
-      glob: 
-        engine: cwl:JsonPointer
-        script: /job/bigWig
+      glob: $(inputs.bigWig)
 
 baseCommand: ["bedGraphToBigWig"]
