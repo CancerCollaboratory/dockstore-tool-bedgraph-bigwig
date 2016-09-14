@@ -6,7 +6,7 @@ cwlVersion: v1.0
 
 requirements:
 - class: DockerRequirement
-  dockerPull: quay.io/cancercollaboratory/dockstore-tool-bedgraph-bigwig
+  dockerPull: quay.io/cancercollaboratory/dockstore-tool-bedgraph-bigwig:1.0
 dct:contributor:
   foaf:name: Andy Yang
   foaf:mbox: mailto:ayang@oicr.on.ca
